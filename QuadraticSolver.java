@@ -1,23 +1,29 @@
 
 /**
- * Write a description of class QuadraticSolver here.
+ * returns the roots of ax^2 + bx + c = 0
  * 
- * @author (your name)
- * @version (a version number or a date)
+ * @author Terence Wu
+ * @version 9/17/2024
  */
 public class QuadraticSolver {
 
-    /**
-     * returns the roots of ax^2 + bx + c = 0 in the format:
-     * "roots are r1 and r2"
-     * (where r1 >= r2)
-     * 
-     * if the roots are non-real, returns "no real roots"
-     * 
-     * precondition: a is non-zero
-     */
     public String roots(double a, double b, double c) {
-        // TODO
-        return ""; // delete this line of code
+
+        double determinant = b*b-4*a*c;
+        if(determinant<0)
+            return "no real roots";
+        else if(determinant==0)
+        {
+            double root;
+            root = (0-b)/(2*a);
+            return "only root is " + root;
+        }
+        else
+        {
+            double r1 = (0-b+Math.sqrt(determinant))/(2*a);
+            double r2 = (0-b-Math.sqrt(determinant))/(2*a);
+            return "roots are " + r1 + " amd " + r2;
+        }
+        
     }
 }
