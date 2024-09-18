@@ -22,7 +22,7 @@ public class QuadraticSolver {
         {
             double r1 = (0-b+Math.sqrt(determinant))/(2*a);
             double r2 = (0-b-Math.sqrt(determinant))/(2*a);
-            return "roots are " + r1 + " amd " + r2;
+            return "roots are " + r1 + " and " + r2;
         }
         
     }
