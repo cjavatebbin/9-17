@@ -14,13 +14,27 @@
  * If the quadratic has no real roots, output "no real roots"
  * 
  * 
- * @author (your name)
- * @version (a version number or a date)
+ * @author 
+ * @version 9/17/2024
  */
+import java.util.Scanner;
 public class QuadraticSolverMain {
     public static void main(String[] args) {
+        
         QuadraticSolver solver = new QuadraticSolver();
-        // TODO
+        Scanner s = new Scanner(System.in);
+        double a,b,c;
+
+        System.out.println("Enter coefficients for the quadratic ax²+bx+c:");
+        System.out.print("\na = ");
+        a = s.nextDouble();
+        System.out.print("\nb = ");
+        b = s.nextDouble();
+        System.out.print("\nc = ");
+        c = s.nextDouble();
+
+        
+        
 
     }
 }
